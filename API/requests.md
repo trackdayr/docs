@@ -2,7 +2,9 @@
 
 Retrieve all user laps across all leaderboards sorted by rank.
 
-`GET http://trackdayr.com/api/v1/GetLapsOfUser`
+```http
+GET http://trackdayr.com/api/v1/GetLapsOfUser`
+```
 
 Query Params:
 
@@ -41,4 +43,3 @@ Response example:
     ]
 }
 ```
-[Test](#getlapsofuser)
