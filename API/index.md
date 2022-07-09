@@ -1,4 +1,4 @@
 # TrackDayR APIs
 
 Here you can find the list of available APIs:
-- [GetLapsOfUser](./requests.md#GetLapsOfUser)
+- [GetLapsOfUser](./requests.md#getlapsofuser)
