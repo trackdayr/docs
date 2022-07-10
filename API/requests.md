@@ -8,10 +8,10 @@ GET http://trackdayr.com/api/v1/GetLapsOfUser`
 
 Query Params:
 
-| Name    | Type   | Required | Description                          |
-| ------- | ------ | -------- | ------------------------------------ |
-| key     | string | ✓        | TrackDayR WebAPI authentication key. |
-| steamid | uint64 | ✓        | SteamID a the user                   |
+| Name     | Type   | Required | Description                          |
+|----------| ------ | -------- |--------------------------------------|
+| key      | string | ✓        | TrackDayR WebAPI authentication key. |
+| steam_id | uint64 | ✓        | SteamID of the user                  |
 
 Response example:
 
@@ -41,5 +41,97 @@ Response example:
             "ugcid": "1851557775279400553"
         }
     ]
+}
+```
+
+## GetNearestFriendsToChallenge
+
+Retrieve all user laps across all leaderboards sorted by rank.
+
+```http
+GET http://trackdayr.com/api/v1/GetNearestFriendsToChallenge`
+```
+
+Query Params:
+
+| Name     | Type   | Required | Description                          |
+|----------| ------ | -------- |--------------------------------------|
+| key      | string | ✓        | TrackDayR WebAPI authentication key. |
+| steam_id | uint64 | ✓        | SteamID of the user                  |
+
+Response example:
+
+```json
+{
+    "count": 4,
+    "laps": [
+        {
+            "leaderboard_id": 6941074,
+            "rank": 5,
+            "steam_id": "76561198128513686",
+            "score": 8964935,
+            "ugcid": "1850429666823138425",
+            "gap": 153
+        },
+        {
+            "leaderboard_id": 6771593,
+            "rank": 4,
+            "steam_id": "76561199054973464",
+            "score": 8940394,
+            "ugcid": "1863939249779684805",
+            "gap": 1788
+        },
+        {
+            "leaderboard_id": 6764254,
+            "rank": 5,
+            "steam_id": "76561198103876283",
+            "score": 8859559,
+            "ugcid": "1688269370744656589",
+            "gap": 4147
+        },
+        {
+            "leaderboard_id": 7371430,
+            "rank": 5,
+            "steam_id": "76561198328970858",
+            "score": 8756177,
+            "ugcid": "1832401149792362627",
+            "gap": 9451
+        }
+    ]
+}
+```
+
+## NotifyNewLapSet
+
+Notify that a lap is added or updated.
+
+```http
+POST http://trackdayr.com/api/v1/NotifyNewLapSet`
+```
+
+Query Params:
+
+| Name           | Type   | Required | Description                                 |
+|----------------|--------| -------- |---------------------------------------------|
+| key            | string | ✓        | TrackDayR WebAPI authentication key.        |
+| steam_id       | uint64 | ✓        | SteamID of the user that made the lap       |
+| leaderboard_id | int32  | ✓        | ID of the leaderboard where the lap was set |
+
+Response example:
+
+```json
+{
+    "Steam": {
+        "Leaderboards": 253,
+        "Laps": 2585
+    },
+    "local": {
+        "Leaderboards": 253,
+        "Laps": 2585
+    },
+    "difference": {
+        "Leaderboards": 0,
+        "Laps": 0
+    }
 }
 ```
