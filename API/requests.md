@@ -1,3 +1,7 @@
+# APIs supported requests
+
+[TOC]
+
 ## GetLapsOfUser
 
 Retrieve all user laps across all leaderboards sorted by rank.
