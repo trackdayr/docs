@@ -83,5 +83,7 @@ You can also edit the material of the skin. You have to export as TGA.
 
 - 1000gp: YOURSTEAMID-skin-1000gp-coat
 
+## Where To Put Your Skins
 
+all the JPG/TGA files must be placed in folder ...\Documents\TrackdayR\skins
 
