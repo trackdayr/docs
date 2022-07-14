@@ -1,6 +1,6 @@
 # Helmet Modding WIKI
 
-[TOC] 
+[TOC]
 
 ## Find your Steam ID
 
