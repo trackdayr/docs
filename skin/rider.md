@@ -2,10 +2,6 @@
 
 [TOC]
 
-## Find your Steam ID
-
-You can see your steam ID with [this online tool](https://steamidfinder.com/ "steamidfinder.com") 
-
 ## What do you need
 
 Firstly you can download templatetes [Leather Suit](https://drive.google.com/file/d/17vk4yoFMuxlP6QgRTubyOlwvoZyQfbUR/view?usp=sharing "Leather Suit") and [Helmet KYT](https://drive.google.com/file/d/1xvkSI_nmcFAJ182Fej1NFLYD7k_5g_zf/view?usp=sharing "Helmet KYT")
@@ -16,11 +12,21 @@ After that you have to export as JPG.
 
 ## Livery Naming
 
-**Tag name must be:**
+There are two type of skins for the rider:  
+- Suit: YOURSTEAMID-skin-body-RIDERTYPE.EXTENSION  
+- Helmet: YOURSTEAMID-skin-helmet-RIDERTYPE.EXTENSION  
 
-- Suit: YOURSTEAMID-skin-body.jpg
-  
-- Helmet: YOURSTEAMID-skin-helmet.jpg
+YOURSTEAMID: your unique SteamID that can be found with this [online tool](https://steamidfinder.com/ "steamidfinder.com") must be present as prefix to activate a specific skin file.
+
+RIDERTYPE: must be present as suffix to specify the rider type:  
+- "-0" for road rider  
+- "-1" for mx rider  
+
+EXTENSION: must be present after the last dot to specify the role of the file:  
+- ".jpg" for the color  
+- ".tga" for the materials  
+
+eg: 76561198103876283-skin-body-1.jpg (suit of road rider)
 
 ## Where To Put Your Skins
 
