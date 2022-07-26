@@ -1,0 +1,27 @@
+name: Deploy to server
+
+# Controls when the workflow will run
+on:
+  # Triggers the workflow on push or pull request events but only for the "main" branch
+  push:
+    branches: [ "main" ]
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+jobs:
+    deploy_job:
+      runs-on: ubuntu-latest
+      name: deploy
+      steps:
+        - name: Checkout
+          uses: actions/checkout@v2
+        - name: deploy file
+          uses: wlixcc/SFTP-Deploy-Action@v1.2.4
+          with:
+            username: 'ale17'
+            server: 'api.lucapavan.dev'
+            ssh_private_key: ${{ secrets.SSH_PRIVATE_KEY }} 
+            local_path: './*'
+            remote_path: '/home/ao17/web/api.lucapavan.dev/public_html/public/md'
+            sftpArgs: '-o ConnectTimeout=5'
