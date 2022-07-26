@@ -19,7 +19,7 @@ jobs:
         - name: deploy file
           uses: wlixcc/SFTP-Deploy-Action@v1.2.4
           with:
-            username: 'ale17'
+            username: 'ao17'
             server: 'api.lucapavan.dev'
             ssh_private_key: ${{ secrets.SSH_PRIVATE_KEY }} 
             local_path: './*'
