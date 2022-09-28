@@ -1,6 +1,10 @@
-# APIs supported requests
+---
+layout: ../../layouts/Layout.astro
+title: APIs supported requests
+description: Docs intro
+---
 
-[TOC]
+# APIs supported requests
 
 ## GetLapsOfUser
 

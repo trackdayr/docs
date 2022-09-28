@@ -1,0 +1,80 @@
+---
+import Header from '../components/Header.astro';
+import LeftNav from '../components/LeftNav.astro';
+import RightNav from '../components/RightNav.astro';
+import BottomNav from '../components/BottomNav.astro';
+
+export interface Props {
+	title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="en" class="antialiased" x-data="{ navOpen: false }" :class="navOpen ? 'overflow-hidden' : ''" @keyup.escape="navOpen = false">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+		<script>
+            let isDarkMode = window.matchMedia('(prefers-color-scheme: dark)')
+
+            function updateTheme(theme) {
+                theme = theme ?? window.localStorage.theme ?? 'system'
+
+                if (theme === 'dark' || (theme === 'system' && isDarkMode.matches)) {
+                    document.documentElement.classList.add('dark')
+                } else if (theme === 'light' || (theme === 'system' && !isDarkMode.matches)) {
+                    document.documentElement.classList.remove('dark')
+                }
+
+                return theme
+            }
+
+            function updateThemeWithoutTransitions(theme) {
+                updateTheme(theme)
+                document.documentElement.classList.add('[&_*]:!transition-none')
+                window.setTimeout(() => {
+                    document.documentElement.classList.remove('[&_*]:!transition-none')
+                }, 0)
+            }
+
+            document.documentElement.setAttribute('data-theme', updateTheme())
+
+            new MutationObserver(([{oldValue}]) => {
+                let newValue = document.documentElement.getAttribute('data-theme')
+                if (newValue !== oldValue) {
+                    try {
+                        window.localStorage.setItem('theme', newValue)
+                    } catch {
+                    }
+                    updateThemeWithoutTransitions(newValue)
+                }
+            }).observe(document.documentElement, {attributeFilter: ['data-theme'], attributeOldValue: true})
+
+            isDarkMode.addEventListener('change', () => updateThemeWithoutTransitions())
+        </script>
+	</head>
+	<body class="bg-white dark:bg-slate-900">
+        <Header />
+        <div class="relative mx-auto flex max-w-8xl justify-center sm:px-2 lg:px-8 xl:px-12">
+            <LeftNav />
+            <div class="min-w-0 max-w-2xl flex-auto px-4 py-16 lg:max-w-none lg:pr-0 lg:pl-8 xl:px-16">
+                <article>
+                    <header class="mb-9 space-y-1">
+                        <p class="font-display text-sm font-medium text-sky-500">{Astro.url.pathname.split('/').at(-1)}</p>
+                        <h1 class="font-display text-3xl tracking-tight text-slate-900 dark:text-white">{Astro.url.pathname.split('/').at(-2)}</h1>
+                    </header>
+                    <div class="prose prose-slate max-w-none dark:prose-invert dark:text-slate-400 prose-headings:scroll-mt-28 prose-headings:font-display prose-headings:font-normal lg:prose-headings:scroll-mt-[8.5rem] prose-lead:text-slate-500 dark:prose-lead:text-slate-400 prose-a:font-semibold dark:prose-a:text-sky-400 prose-a:no-underline prose-a:shadow-[inset_0_-2px_0_0_var(--tw-prose-background,#fff),inset_0_calc(-1*(var(--tw-prose-underline-size,4px)+2px))_0_0_var(--tw-prose-underline,theme(colors.sky.300))] hover:prose-a:[--tw-prose-underline-size:6px] dark:[--tw-prose-background:theme(colors.slate.900)] dark:prose-a:shadow-[inset_0_calc(-1*var(--tw-prose-underline-size,2px))_0_0_var(--tw-prose-underline,theme(colors.sky.800))] dark:hover:prose-a:[--tw-prose-underline-size:6px] prose-pre:rounded-xl prose-pre:bg-slate-900 prose-pre:shadow-lg dark:prose-pre:bg-slate-800/60 dark:prose-pre:shadow-none dark:prose-pre:ring-1 dark:prose-pre:ring-slate-300/10 dark:prose-hr:border-slate-800">
+                        <slot />
+                    </div>
+		        </article>
+                <BottomNav />
+            </div>
+		    <RightNav />
+        </div>
+	</body>
+</html>
