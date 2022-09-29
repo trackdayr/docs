@@ -1,6 +1,8 @@
-# Bike Mod Tool
-
-[TOC]
+---
+layout: ../layouts/Layout.astro
+title: Bike Mod Tool
+description: Docs intro
+---
 
 With this tool you can build mod bikes for TrackDayR
 

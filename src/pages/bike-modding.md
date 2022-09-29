@@ -1,6 +1,8 @@
-# Bike Modding WIKI
-
-[TOC]
+---
+layout: ../layouts/Layout.astro
+title: Bike Modding WIKI
+description: Docs intro
+---
 
 ## Bike categories
 

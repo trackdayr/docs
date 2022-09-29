@@ -3,7 +3,15 @@
 @tailwind utilities;
 
 @layer base {
-  body {
-    @apply bg-green-900;
+  [x-cloak] {
+    display: none !important;
+  }
+
+  html {
+    font-family: 'Inter', sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Lexend', sans-serif;
   }
 }

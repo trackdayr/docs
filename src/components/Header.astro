@@ -7,7 +7,7 @@ import LogoBlack from '../assets/logos/tdr-black.png';
 <header class="sticky top-0 z-50 flex flex-wrap items-center justify-between bg-white px-4 py-5 shadow-md shadow-slate-900/5 transition duration-500 dark:shadow-none sm:px-6 lg:px-8 dark:bg-slate-900/95 dark:backdrop-blur dark:[@supports(backdrop-filter:blur(0))]:bg-slate-900/75">
     <div class="mr-6 flex lg:hidden">
         <button type="button" class="relative" aria-label="Open navigation"
-        @click="navOpen = !navOpen">
+        @click="navOpen = open">
             <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"
                  class="h-6 w-6 stroke-slate-500">
                 <path d="M4 7h16M4 12h16M4 17h16"></path>
@@ -20,9 +20,9 @@ import LogoBlack from '../assets/logos/tdr-black.png';
             <img src={LogoBlack} alt="Logo" class="inline dark:hidden h-6 w-14">
             <img src={LogoWhite} alt="Logo" class="hidden dark:inline h-6 w-14">
         </a>
-        <p class="ml-4 text-black text-2xl text-slate-900 dark:text-white hidden lg:inline">
+        <h2 class="ml-4 text-black text-2xl text-slate-900 dark:text-white hidden lg:inline">
             DOCS
-        </p>
+        </h2>
     </div>
     <div class="-my-5 mr-6 sm:mr-8 md:mr-0">
         <button type="button"

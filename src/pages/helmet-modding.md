@@ -1,6 +1,8 @@
-# Helmet Modding WIKI
-
-[TOC]
+---
+layout: ../layouts/Layout.astro
+title: Helmet Modding WIKI
+description: ...
+---
 
 ## Find your Steam ID
 

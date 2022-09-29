@@ -1,6 +1,8 @@
-# Track Mod Tool
-
-[TOC]
+---
+layout: ../layouts/Layout.astro
+title: Track Mod Tool
+description: ...
+---
 
 With this tool you can build mod tracks for TrackDayR
 

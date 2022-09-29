@@ -23,7 +23,7 @@
         </svg>
     </button>
     <ul class="absolute top-full left-[-250%] mt-3 w-36 space-y-1 rounded-xl bg-white p-3 text-sm font-medium shadow-md shadow-black/5 ring-1 ring-black/5 dark:bg-slate-800 dark:ring-white/5"
-        x-show="open" x-transition @click.outside="open = false">
+        x-show="open" x-cloak x-transition @click.outside="open = false">
         <li class="flex cursor-pointer select-none items-center rounded-[0.625rem] p-1 text-slate-700 dark:text-slate-400"
             @click="document.documentElement.setAttribute('data-theme', 'light'); open = false;">
             <div class="rounded-md bg-white p-1 shadow ring-1 ring-slate-900/5 dark:bg-slate-700 dark:ring-inset dark:ring-white/5">
