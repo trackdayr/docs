@@ -1,13 +1,13 @@
 export const sidebar = {
     'Skin modding': [
         {
+            title: 'Rider skins',
+            filename: 'rider-skins',
+        },
+        {
             title: 'Bike skins',
             filename: 'bike-skins',
         },
-        {
-            title: 'Rider skins',
-            filename: 'rider-skins',
-        }
     ],
     'Asset modding': [
         {
@@ -33,7 +33,7 @@ export const sidebar = {
         {
             title: 'GetLapsOfUser',
             filename: 'get-laps-of-user',
-        }
+        },
     ],
 }
 
