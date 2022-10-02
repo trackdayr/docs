@@ -4,7 +4,7 @@ import LogoBlack from '../assets/logos/tdr-black.png';
 
 import { sidebar } from '../config';
 
-const currentPath = Astro.url.pathname.substring(1);
+const currentPath = Astro.url.pathname.replace(/\//ig, '');
 ---
 <div class="hidden lg:relative lg:block lg:flex-none">
     <div class="absolute inset-y-0 right-0 w-[50vw] bg-slate-50 dark:hidden"></div>
@@ -37,7 +37,7 @@ const currentPath = Astro.url.pathname.substring(1);
             </ul>
         </nav>
     </div>
-    <div x-show="navOpen" class="w-full h-full backdrop-blur"></div>
+    <div x-show="navOpen" class="w-full h-full backdrop-blur lg:hidden"></div>
 </div>
 
 <div x-show="navOpen" x-cloak class="fixed inset-0 z-50 flex items-start overflow-y-auto bg-slate-900/50 pr-10 backdrop-blur lg:hidden">
@@ -64,11 +64,11 @@ const currentPath = Astro.url.pathname.substring(1);
                             {children.map((child) => {
                                 return (
                                     <li class="relative">
-                                        <a class={currentPath === child.link
+                                        <a class={currentPath === child.filename
                                                     ? 'block w-full ml-3.5 before:pointer-events-none before:absolute before:-left-1 before:top-1/2 before:h-1.5 before:w-1.5 before:-translate-y-1/2 before:rounded-full font-semibold bg-yellowtdr w-fit px-2 py-1 rounded before:bg-yellowtdr'
                                                     : 'block w-full ml-[1.375rem] before:pointer-events-none before:absolute before:-left-1 before:top-1/2 before:h-1.5 before:w-1.5 before:-translate-y-1/2 before:rounded-full text-slate-500 before:hidden before:bg-slate-300 hover:text-slate-600 hover:before:block dark:text-slate-400 dark:before:bg-slate-700 dark:hover:text-slate-300'}
-                                            href={child.link}>
-                                            {child.text}
+                                            href={child.filename}>
+                                            {child.title}
                                         </a>
                                     </li>
                                 );
