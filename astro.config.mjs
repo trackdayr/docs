@@ -7,4 +7,15 @@ import alpinejs from "@astrojs/alpinejs";
 export default defineConfig({
   integrations: [tailwind(), alpinejs()],
   site: 'https://docs.trackdayr.com',
+  markdown: {
+    shikiConfig: {
+      theme: 'github-dark',
+      langs: [{
+        id: 'http',
+        scopeName: 'source.http',
+        path: '../../src/assets/shiki/http.tmLanguage.json',
+        aliases: ['rest'],
+      }],
+    }
+  }
 });
