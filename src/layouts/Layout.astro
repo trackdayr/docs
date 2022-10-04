@@ -3,6 +3,7 @@ import Header from '../components/Header.astro';
 import LeftNav from '../components/LeftNav.astro';
 import RightNav from '../components/RightNav.astro';
 import BottomNav from '../components/BottomNav.astro';
+import Footer from '../components/Footer.astro';
 
 import { sidebar } from '../config';
 
@@ -89,15 +90,18 @@ Object.keys(sidebar).some(key => {
             <LeftNav />
             <div class="min-w-0 max-w-2xl flex-auto px-4 py-16 lg:max-w-none lg:pr-0 lg:pl-8 xl:px-16">
                 <article>
-                    <header class="mb-9 space-y-1">
-                        <p class="font-display text-sm font-medium bg-yellowtdr w-fit px-2 py-1 rounded">{category}</p>
-                        <h1 class="font-display text-3xl tracking-tight text-slate-900 dark:text-white">{frontmatter.title}</h1>
-                    </header>
+                    {category &&
+                        <header class="mb-9 space-y-1">
+                            <p class="font-display text-sm font-medium bg-yellowtdr w-fit px-2 py-1 rounded">{category}</p>
+                            <h1 class="font-display text-3xl tracking-tight text-slate-900 dark:text-white">{frontmatter.title}</h1>
+                        </header>
+                    }
                     <div class="prose prose-slate max-w-none dark:prose-invert dark:text-slate-400 prose-headings:scroll-mt-28 prose-headings:font-display prose-headings:font-normal lg:prose-headings:scroll-mt-[8.5rem] prose-lead:text-slate-500 dark:prose-lead:text-slate-400 prose-a:font-medium prose-a:text-gray-600 hover:prose-a:text-black dark:prose-a:text-gray-300 dark:hover:prose-a:text-white prose-a:decoration-yellowtdr prose-a:underline prose-a:underline-offset-2 hover:prose-a:decoration-2 prose-pre:rounded-xl prose-pre:bg-slate-900 prose-pre:shadow-lg dark:prose-pre:bg-slate-800/60 dark:prose-pre:shadow-none dark:prose-pre:ring-1 dark:prose-pre:ring-slate-300/10 dark:prose-hr:border-slate-800">
                         <slot />
                     </div>
 		        </article>
                 <BottomNav previous={previous} next={next} />
+                <Footer />
             </div>
 		    <RightNav headings={Astro.props.headings} />
         </div>

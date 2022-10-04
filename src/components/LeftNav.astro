@@ -1,6 +1,6 @@
 ---
-import LogoWhite from '../assets/logos/tdr-white.png';
-import LogoBlack from '../assets/logos/tdr-black.png';
+import LogoLight from '../assets/logos/TDR-Light.svg';
+import LogoDark from '../assets/logos/TDR-Dark.svg';
 
 import { sidebar } from '../config';
 
@@ -11,7 +11,7 @@ const currentPath = Astro.url.pathname.replace(/\//ig, '');
     <div class="absolute top-16 bottom-0 right-0 hidden h-12 w-px bg-gradient-to-t from-slate-800 dark:block"></div>
     <div class="absolute top-28 bottom-0 right-0 hidden w-px bg-slate-800 dark:block"></div>
     <div class="sticky top-[4.5rem] -ml-0.5 h-[calc(100vh-4.5rem)] overflow-y-auto overflow-x-hidden py-16 pl-0.5">
-        <nav class="text-base lg:text-sm w-64 pr-8 xl:w-72 xl:pr-16">
+        <nav class="text-base lg:text-sm w-56 pr-8 xl:w-64 xl:pr-16">
             <ul role="list" class="space-y-9">
                 {Object.entries(sidebar).map(([header, children]) => (
                     <li>
@@ -49,8 +49,8 @@ const currentPath = Astro.url.pathname.replace(/\//ig, '');
                 </svg>
             </button>
             <a class="ml-6" aria-label="Home page" href="/">
-                <img src={LogoBlack} alt="Logo" class="inline dark:hidden h-6 w-14">
-                <img src={LogoWhite} alt="Logo" class="hidden dark:inline h-6 w-14">
+                <img src={LogoDark} alt="Logo" class="inline dark:hidden h-6 w-14">
+                <img src={LogoLight} alt="Logo" class="hidden dark:inline h-6 w-14">
             </a>
         </div>
         <nav class="text-base lg:text-sm mt-5 px-1">
