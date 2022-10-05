@@ -1,17 +1,25 @@
 # How to contribute
 
+First of all thank you for showing interest in contributing to this documentation.  
+If you are new to GitHub contributions please read this 
+[guide](https://docs.github.com/en/get-started/quickstart/contributing-to-projects).  
+If you need help with writing markdown please read this [guide](https://www.markdownguide.org/basic-syntax/).
+If you are already conformable with these tools, you can skip to the next section to learn about project guidelines.
+
 ## Modify an existing page
 
 If you find an error or something missing you can contribute by modifying a page. You can do this by clicking on the 
-"Edit this page" link at the bottom of the page. This will take you to the GitHub repository where you can edit the 
-page and submit a pull request. You can also directly find the page in this repository under the `src/pages/` folder. 
+"Edit this page" link at the bottom of the page. This will make you start the fork process described in the guide 
+above.  
+You can also directly fork the repository and start to work from there.
 
 ## Create, place and name the markdown file
 
 All documentation file are in `Markdown (.md)` format.  
 These files are placed inside the `src/pages/` directory.  
-The naming of the files must be in lowercase with `-` between word; the only exception is acronyms.  
-Example: `TDR-naming-example.md`
+The naming of the files must be in lowercase with `-` between words.  
+
+Example: `naming-example.md`
 
 ## Add the page to the sidebar
 
@@ -85,3 +93,14 @@ For more reference please watch the files present in the repository.
 To add images to the documentation you must place them inside the `src/assets/images/` directory.
 Then you can reference them in the markdown file using the following syntax:  
 `![Image description](/assets/images/image-name.extension "Image title")`
+
+## Test your changes
+
+You can test your changes by running the website locally.  
+In order to do that you must have [Node.js](https://nodejs.org/en/) installed on your machine 
+([yarn](https://classic.yarnpkg.com/en/docs/install) is used but optional).  
+Then you can follow these steps:
+1. Run `npm install` or `yarn install` to install the dependencies
+2. Run `npm run dev` or `yarn dev` to start the development server
+3. Open your browser at `http://localhost:3000/`
+4. Make your changes and your browser will automatically refresh with the new content
