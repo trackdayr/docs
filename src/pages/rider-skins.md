@@ -1,6 +1,8 @@
-# Rider Skin WIKI
-
-[TOC]
+---
+layout: ../layouts/Layout.astro
+title: Rider Skin WIKI
+description: ...
+---
 
 ## What do you need
 

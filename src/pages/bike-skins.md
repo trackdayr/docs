@@ -1,6 +1,8 @@
-# Bike Skin WIKI
-
-[TOC]
+---
+layout: ../layouts/Layout.astro
+title: Bike Skin WIKI
+description: Docs intro
+---
 
 ## Find your Steam ID
 

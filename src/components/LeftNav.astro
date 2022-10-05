@@ -1,0 +1,82 @@
+---
+import LogoLight from '../assets/logos/TDR-Light.svg';
+import LogoDark from '../assets/logos/TDR-Dark.svg';
+
+import { sidebar } from '../config';
+
+const currentPath = Astro.url.pathname.replace(/\//ig, '');
+---
+<div class="hidden lg:relative lg:block lg:flex-none">
+    <div class="absolute inset-y-0 right-0 w-[50vw] bg-slate-50 dark:hidden"></div>
+    <div class="absolute top-16 bottom-0 right-0 hidden h-12 w-px bg-gradient-to-t from-slate-800 dark:block"></div>
+    <div class="absolute top-28 bottom-0 right-0 hidden w-px bg-slate-800 dark:block"></div>
+    <div class="sticky top-[4.5rem] -ml-0.5 h-[calc(100vh-4.5rem)] overflow-y-auto overflow-x-hidden py-16 pl-0.5">
+        <nav class="text-base lg:text-sm w-56 pr-8 xl:w-64 xl:pr-16">
+            <ul role="list" class="space-y-9">
+                {Object.entries(sidebar).map(([header, children]) => (
+                    <li>
+                        <h2 class="font-display font-medium text-slate-900 dark:text-white">
+                            {header}
+                        </h2>
+                        <ul role="list" class="mt-2 space-y-2 border-l-2 border-slate-100 dark:border-slate-800 lg:mt-4 lg:space-y-4 lg:border-slate-200">
+                            {children.map((child) => {
+                                return (
+                                    <li class="relative">
+                                        <a class={currentPath === child.filename
+                                                    ? 'block w-full ml-3.5 before:pointer-events-none before:absolute before:-left-1 before:top-1/2 before:h-1.5 before:w-1.5 before:-translate-y-1/2 before:rounded-full font-semibold bg-yellowtdr w-fit px-2 py-1 rounded before:bg-yellowtdr'
+                                                    : 'block w-full ml-[1.375rem] before:pointer-events-none before:absolute before:-left-1 before:top-1/2 before:h-1.5 before:w-1.5 before:-translate-y-1/2 before:rounded-full text-slate-500 before:hidden before:bg-slate-300 hover:text-slate-600 hover:before:block dark:text-slate-400 dark:before:bg-slate-700 dark:hover:text-slate-300'}
+                                            href={'/'+child.filename}>
+                                            {child.title}
+                                        </a>
+                                    </li>
+                                );
+                            })}
+                        </ul>
+                    </li>
+                ))}
+            </ul>
+        </nav>
+    </div>
+    <div x-show="navOpen" class="w-full h-full backdrop-blur lg:hidden"></div>
+</div>
+
+<div x-show="navOpen" x-cloak class="fixed inset-0 z-50 flex items-start overflow-y-auto bg-slate-900/50 pr-10 backdrop-blur lg:hidden">
+    <div class="min-h-full w-full max-w-xs bg-white px-4 pt-5 pb-12 dark:bg-slate-900 sm:px-6">
+        <div class="flex items-center">
+            <button type="button" aria-label="Close navigation" tabindex="0" @click="navOpen = false">
+                <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" class="h-6 w-6 stroke-slate-500">
+                    <path d="M5 5l14 14M19 5l-14 14"></path>
+                </svg>
+            </button>
+            <a class="ml-6" aria-label="Home page" href="/">
+                <img src={LogoDark} alt="Logo" class="inline dark:hidden h-6 w-14">
+                <img src={LogoLight} alt="Logo" class="hidden dark:inline h-6 w-14">
+            </a>
+        </div>
+        <nav class="text-base lg:text-sm mt-5 px-1">
+            <ul role="list" class="space-y-9">
+                {Object.entries(sidebar).map(([header, children]) => (
+                    <li>
+                        <h2 class="font-display font-medium text-slate-900 dark:text-white">
+                            {header}
+                        </h2>
+                        <ul role="list" class="mt-2 space-y-2 border-l-2 border-slate-100 dark:border-slate-800 lg:mt-4 lg:space-y-4 lg:border-slate-200">
+                            {children.map((child) => {
+                                return (
+                                    <li class="relative">
+                                        <a class={currentPath === child.filename
+                                                    ? 'block w-full ml-3.5 before:pointer-events-none before:absolute before:-left-1 before:top-1/2 before:h-1.5 before:w-1.5 before:-translate-y-1/2 before:rounded-full font-semibold bg-yellowtdr w-fit px-2 py-1 rounded before:bg-yellowtdr'
+                                                    : 'block w-full ml-[1.375rem] before:pointer-events-none before:absolute before:-left-1 before:top-1/2 before:h-1.5 before:w-1.5 before:-translate-y-1/2 before:rounded-full text-slate-500 before:hidden before:bg-slate-300 hover:text-slate-600 hover:before:block dark:text-slate-400 dark:before:bg-slate-700 dark:hover:text-slate-300'}
+                                            href={'/'+child.filename}>
+                                            {child.title}
+                                        </a>
+                                    </li>
+                                );
+                            })}
+                        </ul>
+                    </li>
+                ))}
+            </ul>
+        </nav>
+    </div>
+</div>
