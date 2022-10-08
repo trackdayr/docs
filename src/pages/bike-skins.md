@@ -1,7 +1,7 @@
 ---
 layout: ../layouts/Layout.astro
 title: Bike Skin WIKI
-description: Docs intro
+description: Everything about TrackDayR bike skinning.
 ---
 
 ## Find your Steam ID

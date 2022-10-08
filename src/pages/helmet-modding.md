@@ -1,7 +1,7 @@
 ---
 layout: ../layouts/Layout.astro
 title: Helmet Modding WIKI
-description: ...
+description: Everything about TrackDayR helmet modding.
 ---
 
 ## Find your Steam ID

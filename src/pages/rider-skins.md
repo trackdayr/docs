@@ -1,7 +1,7 @@
 ---
 layout: ../layouts/Layout.astro
 title: Rider Skin WIKI
-description: ...
+description: Everything about TrackDayR rider skinning.
 ---
 
 ## What do you need

@@ -1,7 +1,7 @@
 ---
 layout: ../layouts/Layout.astro
 title: Bike Modding WIKI
-description: Docs intro
+description: Everything about TrackDayR bike modding.
 ---
 
 ## Bike categories

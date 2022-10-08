@@ -1,7 +1,7 @@
 ---
 layout: ../layouts/Layout.astro
 title: Bike Mod Tool
-description: Docs intro
+description: Everything about TrackDayR bike tooling.
 ---
 
 With this tool you can build mod bikes for TrackDayR

@@ -1,7 +1,7 @@
 ---
 layout: ../layouts/Layout.astro
 title: Track Mod Tool
-description: ...
+description: Everything about TrackDayR track tooling.
 ---
 
 With this tool you can build mod tracks for TrackDayR
