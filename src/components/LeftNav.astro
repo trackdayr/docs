@@ -23,8 +23,8 @@ const currentPath = Astro.url.pathname.replace(/\//ig, '');
                                 return (
                                     <li class="relative">
                                         <a class={currentPath === child.filename
-                                                    ? 'block w-full ml-3.5 before:pointer-events-none before:absolute before:-left-1 before:top-1/2 before:h-1.5 before:w-1.5 before:-translate-y-1/2 before:rounded-full font-semibold bg-yellowtdr w-fit px-2 py-1 rounded before:bg-yellowtdr'
-                                                    : 'block w-full ml-[1.375rem] before:pointer-events-none before:absolute before:-left-1 before:top-1/2 before:h-1.5 before:w-1.5 before:-translate-y-1/2 before:rounded-full text-slate-500 before:hidden before:bg-slate-300 hover:text-slate-600 hover:before:block dark:text-slate-400 dark:before:bg-slate-700 dark:hover:text-slate-300'}
+                                                    ? 'block w-fit ml-3.5 before:pointer-events-none before:absolute before:-left-1 before:top-1/2 before:h-1.5 before:w-1.5 before:-translate-y-1/2 before:rounded-full font-semibold bg-yellowtdr w-fit px-2 py-1 rounded before:bg-yellowtdr'
+                                                    : 'block w-fit ml-[1.375rem] before:pointer-events-none before:absolute before:-left-1 before:top-1/2 before:h-1.5 before:w-1.5 before:-translate-y-1/2 before:rounded-full text-slate-500 before:hidden before:bg-slate-300 hover:text-slate-600 hover:before:block dark:text-slate-400 dark:before:bg-slate-700 dark:hover:text-slate-300'}
                                             href={'/'+child.filename}>
                                             {child.title}
                                         </a>
@@ -65,8 +65,8 @@ const currentPath = Astro.url.pathname.replace(/\//ig, '');
                                 return (
                                     <li class="relative">
                                         <a class={currentPath === child.filename
-                                                    ? 'block w-full ml-3.5 before:pointer-events-none before:absolute before:-left-1 before:top-1/2 before:h-1.5 before:w-1.5 before:-translate-y-1/2 before:rounded-full font-semibold bg-yellowtdr w-fit px-2 py-1 rounded before:bg-yellowtdr'
-                                                    : 'block w-full ml-[1.375rem] before:pointer-events-none before:absolute before:-left-1 before:top-1/2 before:h-1.5 before:w-1.5 before:-translate-y-1/2 before:rounded-full text-slate-500 before:hidden before:bg-slate-300 hover:text-slate-600 hover:before:block dark:text-slate-400 dark:before:bg-slate-700 dark:hover:text-slate-300'}
+                                                    ? 'block w-fit ml-3.5 before:pointer-events-none before:absolute before:-left-1 before:top-1/2 before:h-1.5 before:w-1.5 before:-translate-y-1/2 before:rounded-full font-semibold bg-yellowtdr w-fit px-2 py-1 rounded before:bg-yellowtdr'
+                                                    : 'block w-fit ml-[1.375rem] before:pointer-events-none before:absolute before:-left-1 before:top-1/2 before:h-1.5 before:w-1.5 before:-translate-y-1/2 before:rounded-full text-slate-500 before:hidden before:bg-slate-300 hover:text-slate-600 hover:before:block dark:text-slate-400 dark:before:bg-slate-700 dark:hover:text-slate-300'}
                                             href={'/'+child.filename}>
                                             {child.title}
                                         </a>
