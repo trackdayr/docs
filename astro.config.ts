@@ -67,5 +67,6 @@ export default defineConfig({
                 },
             ],
         ],
+        extendDefaultPlugins: true,
     },
 });
