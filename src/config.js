@@ -1,3 +1,8 @@
+export const links = {
+    github: 'https://github.com/trackdayr/docs',
+    discord: 'https://discord.gg/trackdayr',
+}
+
 export const sidebar = {
     'Skin modding': [
         {
@@ -38,3 +43,7 @@ export const sidebar = {
 }
 
 export const defaultPage = 'rider-skins';
+
+export let indexingExcludedPages = [
+    '404.md',
+];

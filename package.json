@@ -1,14 +1,15 @@
 {
   "name": "trackdayr-docs",
-  "type": "module",
   "version": "0.0.1",
   "private": true,
+  "type": "module",
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "index:md": "node src/scripts/markdown-indexing.js"
   },
   "dependencies": {
     "@astrojs/alpinejs": "^0.1.2",
@@ -16,8 +17,12 @@
     "@astrojs/tailwind": "^2.0.1",
     "@tailwindcss/typography": "^0.5.7",
     "@types/alpinejs": "^3.0.0",
+    "algoliasearch": "^4.14.2",
     "alpinejs": "^3.10.3",
     "astro": "1.4.6",
+    "dotenv": "^16.0.3",
+    "gray-matter": "^4.0.3",
+    "instantsearch.js": "^4.48.0",
     "rehype-autolink-headings": "^6.1.1",
     "rehype-slug": "^5.0.1",
     "tailwindcss": "^3.1.8"
