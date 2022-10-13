@@ -22,6 +22,5 @@ pnpm-debug.log*
 # editor-specific files
 .idea/
 
-# lock files
-yarn.lock
+# lock files different from yarn.lock
 package-lock.json
