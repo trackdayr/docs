@@ -31,6 +31,10 @@ export const sidebar = {
     ],
     'Debugging': [
         {
+            title: 'Advanced Mode',
+            filename: 'advanced-mode',
+        },
+        {
             title: 'Log Location',
             filename: 'log-location',
         },
