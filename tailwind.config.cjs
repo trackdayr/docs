@@ -1,3 +1,5 @@
+const defaultTheme = require('tailwindcss/defaultTheme')
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
 	content: [
@@ -9,6 +11,9 @@ module.exports = {
 		extend: {
 			colors: {
 				'yellowtdr': '#FFD800',
+			},
+			fontFamily: {
+				'mono': ['Fira Code', ...defaultTheme.fontFamily.mono],
 			},
 		},
 	},
