@@ -29,12 +29,18 @@ export const sidebar = {
             filename: 'track-tools',
         },
     ],
+    'Debugging': [
+        {
+            title: 'Log Location',
+            filename: 'log-location',
+        },
+    ],
     'API Reference': [
         {
             title: 'GetLapsOfUser',
             filename: 'get-laps-of-user',
         },
-    ],
+    ]
 }
 
 export const defaultPage = 'rider-skins';
