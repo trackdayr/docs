@@ -44,6 +44,12 @@ export const sidebar = {
             title: 'GetLapsOfUser',
             filename: 'get-laps-of-user',
         },
+    ],
+    'Miscellaneous': [
+        {
+            title: 'Brand Usage',
+            filename: 'brand',
+        },
     ]
 }
 
