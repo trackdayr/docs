@@ -1,7 +1,7 @@
 ---
 layout: ../layouts/Layout.astro
 title: NotifyLapSet API
-description: Notify the database of a lab being set.
+description: Notify the database of a lap being set.
 ---
 ## Description
 
