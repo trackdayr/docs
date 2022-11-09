@@ -6,7 +6,7 @@ description: Everything about TrackDayR rider skinning.
 
 ## What do you need
 
-Firstly you can download templatetes [Leather Suit](https://drive.google.com/file/d/17vk4yoFMuxlP6QgRTubyOlwvoZyQfbUR/view?usp=sharing "Leather Suit") and [Helmet KYT](https://drive.google.com/file/d/1xvkSI_nmcFAJ182Fej1NFLYD7k_5g_zf/view?usp=sharing "Helmet KYT")
+Firstly you can download templatetes [MX Suit](https://drive.google.com/file/d/1qt5KMGa6JA-TU2hPGcuQV0l5I83OXlYX/view?usp=sharing "MX Suit") , [Asphalt Leather Suit](https://drive.google.com/file/d/17vk4yoFMuxlP6QgRTubyOlwvoZyQfbUR/view?usp=sharing "Asphalt Leather Suit") and [Helmet KYT](https://drive.google.com/file/d/1xvkSI_nmcFAJ182Fej1NFLYD7k_5g_zf/view?usp=sharing "Helmet KYT")
 
 You can use any photo editor program to customize these files (.psd).  
 
