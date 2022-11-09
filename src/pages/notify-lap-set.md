@@ -5,7 +5,7 @@ description: Notify the database of a lap being set.
 ---
 ## Description
 
-Notify the database of a lab being set.
+Notify the database of a lap being set.
 
 ## Endpoint
 
