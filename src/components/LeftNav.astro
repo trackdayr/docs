@@ -1,7 +1,5 @@
 ---
-import LogoLight from '../assets/logos/TDR-Light.svg';
-import LogoDark from '../assets/logos/TDR-Dark.svg';
-
+import Logo from '../assets/logos/TrackDayR-mark.svg';
 import { sidebar } from '../config';
 
 const currentPath = Astro.url.pathname.replace(/\//ig, '');
@@ -49,8 +47,7 @@ const currentPath = Astro.url.pathname.replace(/\//ig, '');
                 </svg>
             </button>
             <a class="ml-6" aria-label="Home page" href="/">
-                <img src={LogoDark} alt="Logo" class="inline dark:hidden h-6 w-14">
-                <img src={LogoLight} alt="Logo" class="hidden dark:inline h-6 w-14">
+                <img src={Logo} alt="Logo" class="inline h-6 p-1 rounded bg-slate-900">
             </a>
         </div>
         <nav class="text-base lg:text-sm mt-5 px-1">

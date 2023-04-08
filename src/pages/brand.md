@@ -36,18 +36,18 @@ S.r.l.
 
 <div class="sm:flex gap-2 mt-[-1.25em]">
     <div>
-        <a href="/assets/logos/TDR-Light.svg" download>
-            <span class="sr-only">Download light mark</span>
-            <img class="max-w-xs w-full bg-slate-900 p-2 rounded" src="/assets/logos/TDR-Light.svg" alt="TDR Logo Light" title="Download light mark">
+        <a href="/assets/logos/TrackDayR-mark.png" download>
+            <span class="sr-only">Download mark PNG</span>
+            <img class="h-48 max-w-xs bg-slate-900 p-2 rounded" src="/assets/logos/TrackDayR-mark.png" alt="TrackDayR mark PNG" title="Download mark PNG">
         </a>
-        <a href="/assets/logos/TDR-Light.svg" download>Download light mark</a>
+        <a href="/assets/logos/TrackDayR-mark.png" download>Download mark PNG</a>
     </div>
     <div>
-        <a href="/assets/logos/TDR-Dark.svg" download>
-            <span class="sr-only">Download dark mark</span>
-            <img class="max-w-xs w-full bg-white p-2 rounded" src="/assets/logos/TDR-Dark.svg" alt="TDR Logo Dark" title="Download dark mark">
+        <a href="/assets/logos/TrackDayR-mark.svg" download>
+            <span class="sr-only">Download mark SVG</span>
+            <img class="h-48 max-w-xs bg-slate-900 p-2 rounded" src="/assets/logos/TrackDayR-mark.svg" alt="TrackDayR mark SVG" title="Download mark SVG">
         </a>
-        <a href="/assets/logos/TDR-Dark.svg" download>Download dark mark</a>
+        <a href="/assets/logos/TrackDayR-mark.svg" download>Download mark SVG</a>
     </div>    
 </div>
 
@@ -55,17 +55,17 @@ S.r.l.
 
 <div class="sm:flex gap-2 mt-[-1.25em]">
     <div>
-        <a href="/assets/logos/TrackDayR-Light.svg" download>
-            <span class="sr-only">Download light logotype</span>
-            <img class="max-w-xs w-full bg-slate-900 p-2 rounded" src="/assets/logos/TrackDayR-Light.svg" alt="TrackDayR Logo Light" title="Download light logotype">
+        <a href="/assets/logos/TrackDayR-logotype.png" download>
+            <span class="sr-only">Download logotype PNG</span>
+            <img class="max-w-xs bg-slate-900 p-2 rounded" src="/assets/logos/TrackDayR-logotype.png" alt="TrackDayR logotype PNG" title="Download logotype PNG">
         </a>
-        <a href="/assets/logos/TrackDayR-Light.svg" download>Download light logotype</a>
+        <a href="/assets/logos/TrackDayR-logotype.png" download>Download logotype PNG</a>
     </div>
     <div>
-        <a href="/assets/logos/TrackDayR-Dark.svg" download>
-            <span class="sr-only">Download dark logotype</span>
-            <img class="max-w-xs w-full bg-white p-2 rounded" src="/assets/logos/TrackDayR-Dark.svg" alt="TrackDayR Logo Dark" title="Download dark logotype">
+        <a href="/assets/logos/TrackDayR-logotype.svg" download>
+            <span class="sr-only">Download logotype SVG</span>
+            <img class="max-w-xs bg-slate-900 p-2 rounded" src="/assets/logos/TrackDayR-logotype.svg" alt="TrackDayR logotype SVG" title="Download logotype SVG">
         </a>
-        <a href="/assets/logos/TrackDayR-Dark.svg" download>Download dark logotype</a>
-    </div>    
+        <a href="/assets/logos/TrackDayR-logotype.svg" download>Download logotype SVG</a>
+    </div>  
 </div>
