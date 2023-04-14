@@ -25,5 +25,8 @@ Currently there are seventeen bike categories in the game represented by integer
 | 12    | Ohvale 212   |
 | 13    | Polini 135   |
 | 14    | Big Twin     |
-| 15    | Dirtbike 2T  |
-| 16    | Dirtbike 2T  |
+| 15    | Dirt 2T      |
+| 16    | Dirt 4T      |
+| 17    | ATV          |
+| 18    | APE Proto    |
+| 19    | APE Proto MX |
