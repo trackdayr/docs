@@ -8,4 +8,4 @@ With this tool you can build mod tracks for TrackDayR
 
 This tool works with Unity3D version 2022.1.10
 
-[DOWNLOAD HERE](https://trackdayr-mods.com/download/track-mod-tool/?wpdmdl=897&refresh=6457a77f99b271683466111)
+[DOWNLOAD HERE](https://drive.google.com/file/d/1-Mu6Ohh6gVXsEsB7PlkdlPaQp5VEGtPq/view?usp=share_link)
