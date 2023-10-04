@@ -1,6 +1,10 @@
 ---
 title: NotifyLapSet API
 description: Notify the database of a lap being set.
+sidebar:
+  badge:
+    text: Experimental
+    variant: caution
 ---
 ## Description
 

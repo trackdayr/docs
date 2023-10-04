@@ -1,5 +1,5 @@
 ---
-title: Bike Skin WIKI
+title: Bike Skinning
 description: Everything about TrackDayR bike skinning.
 sidebar:
   label: Bike

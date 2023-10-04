@@ -1,6 +1,10 @@
 ---
 title: GetLeaderboardInfo API
 description: Retrieve track and bike of a leaderboard.
+sidebar:
+  badge:
+    text: Experimental
+    variant: caution
 ---
 ## Description
 

@@ -10,8 +10,8 @@ export default defineConfig({
 			logo: {
 				alt: 'TrackDayR Logo',
 				replacesTitle: true,
-				light: './src/assets/logos/TrackDayR-logotype-light.svg',
-				dark: './src/assets/logos/TrackDayR-logotype.svg',
+				light: './src/assets/logos/TrackDayR-mark-light.svg',
+				dark: './src/assets/logos/TrackDayR-mark.svg',
 			},
 			favicon: 'favicon.ico',
 			editLink: {
@@ -43,7 +43,7 @@ export default defineConfig({
 				{
 					label: 'API Reference',
 					autogenerate: { directory: 'api' },
-					badge: { text: 'Experimental', variant: 'caution' },
+
 				},
 				{
 					label: 'Miscellaneous',

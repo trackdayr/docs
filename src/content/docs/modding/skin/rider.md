@@ -1,5 +1,5 @@
 ---
-title: Rider Skin WIKI
+title: Rider Skinning
 description: Everything about TrackDayR rider skinning.
 sidebar:
   label: Rider

@@ -1,6 +1,10 @@
 ---
 title: GetNearestFriendsLaps API
 description: Retrieve if exists the closest friend lap for every track/bike combination.
+sidebar:
+  badge:
+    text: Experimental
+    variant: caution
 ---
 ## Description
 
