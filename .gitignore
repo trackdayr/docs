@@ -1,6 +1,7 @@
 # build output
 dist/
-.output/
+# generated types
+.astro/
 
 # dependencies
 node_modules/
@@ -19,8 +20,6 @@ pnpm-debug.log*
 # macOS-specific files
 .DS_Store
 
-# editor-specific files
-.idea/
-
-# lock files different from yarn.lock
-package-lock.json
+# IDE files
+.idea
+.vscode
