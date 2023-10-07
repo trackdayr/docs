@@ -3,6 +3,7 @@ import starlight from '@astrojs/starlight';
 
 // https://astro.build/config
 export default defineConfig({
+	site: 'https://docs.trackdayr.com',
 	integrations: [
 		starlight({
 			title: 'TrackDayR Docs',
@@ -18,6 +19,7 @@ export default defineConfig({
 				baseUrl: 'https://github.com/trackdayr/docs/edit/main/',
 			},
 			social: {
+				discord: 'https://discord.gg/5wytnM254v',
 				github: 'https://github.com/trackdayr/docs',
 			},
 			sidebar: [
@@ -41,14 +43,14 @@ export default defineConfig({
 					autogenerate: { directory: 'debugging' },
 				},
 				{
-					label: 'API Reference',
-					autogenerate: { directory: 'api' },
-
-				},
-				{
 					label: 'Miscellaneous',
 					autogenerate: { directory: 'misc' },
 				},
+				// {
+				// 	label: 'API Reference',
+				// 	autogenerate: { directory: 'api' },
+				//
+				// },
 			],
 		}),
 	],

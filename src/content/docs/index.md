@@ -1,11 +1,7 @@
 ---
-title: Bike Modding WIKI
-description: Everything about TrackDayR bike modding.
+title: TrackDayR Docs
+description: Everything about TrackDayR modding and tips.
 ---
 
-[//]: # (<script is:inline define:vars={{ defaultPage }}>)
-
-[//]: # (  window.location.pathname = defaultPage;)
-
-[//]: # (</script>)
-fesgrsgsr
+This is the official documentation website for TrackDayR modding and tips.  
+Choose a topic from the sidebar or search for something specific to get started.
