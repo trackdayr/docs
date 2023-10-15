@@ -46,11 +46,10 @@ export default defineConfig({
 					label: 'Miscellaneous',
 					autogenerate: { directory: 'misc' },
 				},
-				// {
-				// 	label: 'API Reference',
-				// 	autogenerate: { directory: 'api' },
-				//
-				// },
+				{
+					label: 'API Reference',
+					autogenerate: { directory: 'api' },
+				},
 			],
 		}),
 	],
