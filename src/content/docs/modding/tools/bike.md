@@ -7,6 +7,11 @@ sidebar:
 
 With this tool you can build mod bikes for TrackDayR
 
-This tool works with Unity3D version 2022.1.10
+We uploaded the latest tool on the tdrmod.com made by the commuinty so you can find everithing in one place.
 
-[DOWNLOAD HERE](https://drive.google.com/file/d/1jc23TEwbKqFbUyLCBvdARKPToUxSTJ-W/view?usp=sharing "Bike Mod Tool 2022")
+
+[DOWNLOAD HERE](https://tdrmods.com/posts/bike-mod-tool "Latest_Bike Mod Tool")
+
+[HERE YOU CAN FIND PDF INSTRUCTIONS](https://discord.com/channels/509013688066244608/1200367793804156938/1258046949718884424_"Discord")
+
+[HERE YOU CAN FIND VIDEO INSTRUCTIONS](https://www.youtube.com/watch?v=E_faFGZVyEU_"Discord")
