@@ -27,7 +27,7 @@ export default defineConfig({
 					label: 'Modding',
 					items: [
 						{ label: 'Bike', link: '/modding/bike' },
-						{ label: 'Helmet', link: '/modding/helmet' },
+						{ label: 'Mod Manager', link: '/modding/mod-manager' },
 						{
 							label: 'Skin',
 							autogenerate: { directory: 'modding/skin' },
